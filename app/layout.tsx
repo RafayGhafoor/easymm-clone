@@ -1,15 +1,17 @@
 import type React from "react"
-import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "EasyMM - Create Mind Maps with Ease",
-  description: "The simplest way to organize your thoughts, plan projects, and collaborate with your team.",
-    generator: 'v0.dev'
+  title: "EasyMM - Your Complete Crypto Growth Partner",
+  description:
+    "From trending campaigns to exchange listings, market making to social media management — we're your one-stop solution for crypto project success.",
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -18,10 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

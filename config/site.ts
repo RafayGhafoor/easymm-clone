@@ -1,8 +1,14 @@
 export const siteConfig = {
   name: "EasyMM",
   description:
-    "Automated trading system that places buy and sell orders to profit from the bid-ask spread while providing liquidity to the market.",
+    "Your Complete Crypto Growth Partner - From trending campaigns to exchange listings, market making to social media management.",
   tagline: "Maximize profits with automated market making",
+  url: "https://easymm.com",
+  ogImage: "https://easymm.com/og.jpg",
+  links: {
+    twitter: "https://twitter.com/easymm",
+    telegram: "https://t.me/easymm_support",
+  },
   features: [
     {
       title: "Lightning Fast Execution",

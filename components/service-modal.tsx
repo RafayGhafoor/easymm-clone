@@ -20,9 +20,9 @@ export function ServiceModal({ title, subtitle, icon, triggerContent, children }
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{triggerContent}</DialogTrigger>
-      <DialogContent className="max-w-4xl max-h-[90vh] bg-slate-900 border-slate-700 text-white">
-        <DialogHeader className="border-b border-slate-700 pb-6">
-          <div className="flex items-center gap-4">
+      <DialogContent className="max-w-4xl max-h-[90vh] bg-gradient-to-br from-slate-900 to-black border border-slate-700">
+        <DialogHeader className="pb-6 border-b border-slate-700">
+          <div className="flex items-center gap-4 mb-4">
             <div className="text-4xl">{icon}</div>
             <div>
               <DialogTitle className="text-2xl font-bold text-white mb-2">{title}</DialogTitle>
